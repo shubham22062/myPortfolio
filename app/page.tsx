@@ -1,5 +1,6 @@
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
+import Skills from "@/components/Skills";
 
 export default function Home() {
   return (
@@ -7,8 +8,9 @@ export default function Home() {
       
       <div className="w-200 max-w-5xl border-x border-gray-300 px-4">
         <Navbar />
-        <div className="flex justify-center">
+        <div className="justify-center">
           <Hero/>
+          <Skills/>
         </div>
       </div>
 
