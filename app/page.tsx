@@ -7,7 +7,7 @@ export default function Home() {
       
       <div className="w-200 max-w-5xl border-x border-gray-300 px-4">
         <Navbar />
-        <div className="mt-20 flex justify-center">
+        <div className="flex justify-center">
           <Hero/>
         </div>
       </div>
