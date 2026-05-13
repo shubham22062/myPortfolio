@@ -4,9 +4,9 @@ export default function Navbar(){
             <nav className="border rounded-xl border-black mt-4 w-150 h-15 bg-black p-2 ">
                 <div className="flex gap-6 p-1">
                     <img src="/hacker.svg" alt="logo" className="h-8 w-8"/>
-                    <span className="text-white">Home</span>
-                    <span className="text-white">Projects</span>
-                    <span className="text-white">Experience</span>
+                    <span className="text-white hover:underline">Home</span>
+                    <span className="text-white hover:underline">Projects</span>
+                    <span className="text-white hover:underline">Experience</span>
                        
                     <img src="/github.svg" alt="github" className="h-7 w-7 bg-white rounded-full transition-transform duration-300 hover:scale-105"/>
                      <div className="border-r border-gray-100 pr-4 flex items-center">
