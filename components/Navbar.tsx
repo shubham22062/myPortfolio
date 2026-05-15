@@ -1,7 +1,7 @@
 export default function Navbar(){
     return(
-        <div className="flex justify-center">
-            <nav className="border rounded-xl border-black mt-4 w-150 h-15 bg-black p-2 ">
+        <div className="fixed top-4 left-1/2 -translate-x-1/2 z-50 flex justify-center">
+            <nav className="border rounded-xl border-black mt-4 w-150 h-15 bg-black/85 backdrop-blur-md p-2 ">
                 <div className="flex gap-6 p-1">
                     <img src="/hacker.svg" alt="logo" className="h-8 w-8"/>
                     <span className="text-white hover:underline">Home</span>

@@ -1,6 +1,6 @@
 export default function Hero(){
     return(
-        <div className="flex flex-col items-center mt-25 ">
+        <div className="flex flex-col items-center mt-50 ">
             <img src="/profile.svg" alt="myProfile" className="rounded-full h-45 w-45"/>
             <h1 className="font-bold text-5xl pt-5">Hi I'm Shubham Awasthi.</h1>
             <h1 className="font-bold text-5xl">Software Engineer</h1>

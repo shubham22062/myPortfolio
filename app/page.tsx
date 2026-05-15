@@ -1,4 +1,5 @@
 import About from "@/components/About";
+import Card from "@/components/Card";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
 import Skills from "@/components/Skills";
@@ -14,6 +15,9 @@ export default function Home() {
           <Skills/>
           <div>
             <About/>
+          </div>
+          <div>
+            <Card/>
           </div>
         </div>
       </div>
