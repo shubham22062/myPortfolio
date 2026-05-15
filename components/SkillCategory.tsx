@@ -84,7 +84,7 @@ function SkillRow({ title, children }: { title: string; children: React.ReactNod
     <div className="grid grid-cols-1 md:grid-cols-12 items-start border-b border-gray-100 pb-5 gap-2">
       {/* Label Section - 3/12 width */}
       <div className="md:col-span-3 pt-2">
-        <h2 className="text-xl font-bold text-gray-600 uppercase tracking-widest text-left">
+        <h2 className="text-xl font-bold  uppercase tracking-widest text-left">
           {title}
         </h2>
       </div>

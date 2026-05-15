@@ -13,7 +13,7 @@ export default function Experience() {
                         Eye Craft Security
                     </h2>
 
-                    <p className="text-gray-400 py-4 leading-7 tracking-wide">
+                    <p className="text-gray-600 py-4 leading-7 tracking-wide">
                         Currently focused on the end-to-end development of scalable web applications,
                         handling everything from database architecture to server-side logic and
                         performance tuning. I work on building secure backend systems, designing APIs,
@@ -40,7 +40,7 @@ export default function Experience() {
                         IBM
                     </h2>
 
-                    <p className="text-gray-400 py-4 leading-7 tracking-wide">
+                    <p className="text-gray-600 py-4 leading-7 tracking-wide">
                         During my time as a Web Development Intern at IBM, I developed Wellness Buddy, a web solution focused on promoting mental and physical health. I designed an intuitive, informative UI using HTML, CSS, and JavaScript to make wellness content more accessible to general users. The project was specifically aligned with UN SDG-3 (Good Health and Well-being), aiming to encourage healthy habits through digital innovation.
                     </p>
                 </div>
