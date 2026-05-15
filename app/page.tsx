@@ -4,6 +4,7 @@ import Experience from "@/components/Experience";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
 import Projects from "@/components/Projects";
+import SkillCategory from "@/components/SkillCategory";
 import Skills from "@/components/Skills";
 
 export default function Home() {
@@ -28,6 +29,10 @@ export default function Home() {
 
           <div>
             <Projects/>
+          </div>
+
+          <div>
+            <SkillCategory/>
           </div>
 
         </div>
