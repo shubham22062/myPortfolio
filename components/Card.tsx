@@ -1,3 +1,5 @@
+import {GitHubCalendar} from "react-github-calendar";
+
 export default function Card() {
     return (
         <a
@@ -64,11 +66,21 @@ export default function Card() {
 
                 {/* Contribution Graph */}
                 <div className="mt-8 overflow-hidden  border border-white/10 bg-black/20 p-4">
-                    <img
-                        src="https://ghchart.rshah.org/06b6d4/shubham22062"
-                        alt="GitHub Contribution Graph"
-                        className="w-full"
-                    />
+                    <div className="w-full flex justify-center">
+                            <GitHubCalendar
+                                username="shubham22062"
+                                colorScheme="light"
+                                theme={{
+                                    light: [
+                                        "#ebedf0", // no contribution
+                                        "#fecaca", // light red
+                                        "#f87171", // medium red
+                                        "#ef4444", // strong red
+                                        "#b91c1c"  // dark red
+                                    ]
+                                }}
+                            />
+                        </div>
                 </div>
 
             </div>
