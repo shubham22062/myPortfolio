@@ -1,6 +1,6 @@
 export default function Experience() {
     return (
-        <div className="mt-25 p-4 max-w-4xl mx-auto">
+        <div id="experience" className="mt-25 p-4 max-w-4xl mx-auto">
             <h1 className="font-bold text-3xl mb-6">
                 Work Experience
             </h1>

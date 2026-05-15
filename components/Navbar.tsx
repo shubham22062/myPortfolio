@@ -1,12 +1,36 @@
+"use client";
+
+import { Link } from "react-scroll";
+
+
 export default function Navbar(){
     return(
         <div className="fixed top-4 left-1/2 -translate-x-1/2 z-50 flex justify-center">
             <nav className="border rounded-xl border-black mt-4 w-150 h-15 bg-black/85 backdrop-blur-md p-2 ">
                 <div className="flex gap-6 p-1">
                     <img src="/hacker.svg" alt="logo" className="h-8 w-8"/>
-                    <span className="text-white hover:underline">Home</span>
-                    <span className="text-white hover:underline">Projects</span>
-                   <a></a>
+                    <Link to="home"
+                     smooth={true}
+                     duration={500}
+                     spy={true}
+                     offset={-100}
+                     className="text-white hover:underline cursor-pointer">Home</Link>
+
+
+                    <Link to="projects"
+                     smooth={true}
+                     duration={500}
+                     spy={true}
+                     offset={-100}
+                     className="text-white hover:underline cursor-pointer">Projects</Link>
+                    
+                   <Link to="experience"
+                     smooth={true}
+                     duration={500}
+                     spy={true}
+                     offset={-100}
+                     className="text-white hover:underline cursor-pointer">Experience</Link>
+                   
                        
                     <a href="https://github.com/shubham22062"
                         target="_blank"

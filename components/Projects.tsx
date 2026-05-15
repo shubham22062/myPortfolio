@@ -1,6 +1,6 @@
 export default function Projects() {
   return (
-    <div className="mt-20 flex flex-col">
+    <div id="projects" className="mt-20 flex flex-col">
       <h1 className="font-bold text-4xl text-center mb-10">
         Shipped Projects
       </h1>
