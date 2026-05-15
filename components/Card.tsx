@@ -1,4 +1,23 @@
-import {GitHubCalendar} from "react-github-calendar";
+"use client";
+
+import dynamic from "next/dynamic";
+
+// ✅ Correct: named export + SSR disabled
+const GitHubCalendar = dynamic(
+    () => import("react-github-calendar").then((mod) => mod.GitHubCalendar),
+    {
+        ssr: false,
+        loading: () => (
+            <p className="text-gray-400 text-sm">Loading calendar...</p>
+        ),
+    }
+);
+
+// ✅ No ThemeInput type (avoids TS errors)
+const redTheme = {
+    light: ["#ffebeb", "#ffb3b3", "#ff6666", "#ff1a1a", "#cc0000"],
+    dark: ["#ffebeb", "#ffb3b3", "#ff6666", "#ff1a1a", "#cc0000"],
+};
 
 export default function Card() {
     return (
@@ -8,7 +27,7 @@ export default function Card() {
             rel="noopener noreferrer"
             className="block"
         >
-            <div className="mt-10 w-full max-w-4xl mx-auto  border border-gray-200 p-6 shadow-xl transition-all duration-300 hover:scale-[1.02] cursor-pointer">
+            <div className="mt-10 w-full max-w-4xl mx-auto border border-gray-200 p-6 shadow-xl transition-all duration-300 hover:scale-[1.02] cursor-pointer">
 
                 {/* Top Section */}
                 <div className="flex items-start justify-between">
@@ -36,7 +55,6 @@ export default function Card() {
                             <h1 className="text-xl font-bold">
                                 GitHub Commits
                             </h1>
-
                             <span className="block text-gray-400 text-sm mt-1">
                                 @ShubhamAwasthi
                             </span>
@@ -52,7 +70,7 @@ export default function Card() {
                             viewBox="0 0 24 24"
                             strokeWidth="1.5"
                             stroke="currentColor"
-                            className="w-5 h-5 "
+                            className="w-5 h-5"
                         >
                             <path
                                 strokeLinecap="round"
@@ -65,22 +83,14 @@ export default function Card() {
                 </div>
 
                 {/* Contribution Graph */}
-                <div className="mt-8 overflow-hidden  border border-white/10 bg-black/20 p-4">
+                <div className="mt-8 overflow-hidden border border-white/10 bg-black/20 p-4">
                     <div className="w-full flex justify-center">
-                            <GitHubCalendar
-                                username="shubham22062"
-                                colorScheme="light"
-                                theme={{
-                                    light: [
-                                        "#ebedf0", // no contribution
-                                        "#fecaca", // light red
-                                        "#f87171", // medium red
-                                        "#ef4444", // strong red
-                                        "#b91c1c"  // dark red
-                                    ]
-                                }}
-                            />
-                        </div>
+                        <GitHubCalendar
+                            username="shubham22062"
+                            colorScheme="light"
+                            theme={redTheme}
+                        />
+                    </div>
                 </div>
 
             </div>
