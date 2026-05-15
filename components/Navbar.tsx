@@ -6,7 +6,7 @@ export default function Navbar(){
                     <img src="/hacker.svg" alt="logo" className="h-8 w-8"/>
                     <span className="text-white hover:underline">Home</span>
                     <span className="text-white hover:underline">Projects</span>
-                    <span className="text-white hover:underline">Experience</span>
+                   <a></a>
                        
                     <a href="https://github.com/shubham22062"
                         target="_blank"
