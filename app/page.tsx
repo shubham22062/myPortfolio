@@ -2,6 +2,7 @@ import About from "@/components/About";
 import Card from "@/components/Card";
 import Contact from "@/components/Contact";
 import Experience from "@/components/Experience";
+import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
 import Projects from "@/components/Projects";
@@ -38,6 +39,10 @@ export default function Home() {
 
           <div>
             <Contact/>
+          </div>
+
+          <div>
+            <Footer/>
           </div>
 
         </div>
