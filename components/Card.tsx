@@ -2,7 +2,7 @@
 
 import dynamic from "next/dynamic";
 
-// ✅ Correct: named export + SSR disabled
+
 const GitHubCalendar = dynamic(
     () => import("react-github-calendar").then((mod) => mod.GitHubCalendar),
     {
@@ -13,7 +13,7 @@ const GitHubCalendar = dynamic(
     }
 );
 
-// ✅ No ThemeInput type (avoids TS errors)
+
 const redTheme = {
     light: ["#ffebeb", "#ffb3b3", "#ff6666", "#ff1a1a", "#cc0000"],
     dark: ["#ffebeb", "#ffb3b3", "#ff6666", "#ff1a1a", "#cc0000"],

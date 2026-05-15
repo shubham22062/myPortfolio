@@ -1,5 +1,6 @@
 import About from "@/components/About";
 import Card from "@/components/Card";
+import Experience from "@/components/Experience";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
 import Skills from "@/components/Skills";
@@ -19,6 +20,7 @@ export default function Home() {
           <div>
             <Card/>
           </div>
+           <Experience/>
         </div>
       </div>
 
