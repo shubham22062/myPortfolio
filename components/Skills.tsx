@@ -14,7 +14,7 @@ export default function Skills(){
     ];
 
     return(
-        <div className="overflow-hidden py-20 w-100 mx-auto bg-white ">
+        <div className="overflow-hidden mt-20 w-120 mx-auto bg-white">
             <div className="flex animate-scroll gap-12 w-max">
                     {[...skills, ...skills].map((logo,index)=>(
                         <img key={index}

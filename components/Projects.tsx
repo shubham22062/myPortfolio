@@ -28,7 +28,7 @@ export default function Projects() {
               calls, chat, and integrated payments.
             </p>
 
-            <button className="border border-gray-200 bg-gray-300 p-2 rounded-2xl transition-transform duration-300 hover:scale-105 mt-4">
+            <button className="border border-gray-200 bg-gray-300 p-2 rounded-2xl transition-transform duration-300 hover:scale-105 mt-2">
               View Project
             </button>
           </div>
@@ -54,7 +54,7 @@ export default function Projects() {
              A full-stack financial management system built with React and Node.js that provides real-time spending insights through interactive charts and secure data tracking.
             </p>
 
-            <button className="border border-gray-200 bg-gray-300 p-2 rounded-2xl transition-transform duration-300 hover:scale-105 mt-4">
+            <button className="border border-gray-200 bg-gray-300 p-2 rounded-2xl transition-transform duration-300 hover:scale-105 mt-6">
               View Project
             </button>
           </div>
@@ -84,7 +84,7 @@ export default function Projects() {
               calls, chat, and integrated payments.
             </p>
 
-            <button className="border border-gray-200 bg-gray-300 p-2 rounded-2xl transition-transform duration-300 hover:scale-105 mt-4">
+            <button className="border border-gray-200 bg-gray-300 p-2 rounded-2xl transition-transform duration-300 hover:scale-105 mt-2">
               View Project
             </button>
           </div>
@@ -110,7 +110,7 @@ export default function Projects() {
              A full-stack financial management system built with React and Node.js that provides real-time spending insights through interactive charts and secure data tracking.
             </p>
 
-            <button className="border border-gray-200 bg-gray-300 p-2 rounded-2xl transition-transform duration-300 hover:scale-105 mt-4">
+            <button className="border border-gray-200 bg-gray-300 p-2 rounded-2xl transition-transform duration-300 hover:scale-105 mt-5">
               View Project
             </button>
           </div>
