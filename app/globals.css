@@ -1,11 +1,10 @@
 @import "tailwindcss";
 
-
+/* animations */
 @keyframes scroll {
   from {
     transform: translateX(0);
   }
-
   to {
     transform: translateX(-50%);
   }
@@ -15,6 +14,40 @@
   animation: scroll 20s linear infinite;
 }
 
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* smooth scroll */
 html {
   scroll-behavior: smooth;
+}
+
+/* ✅ GLOBAL THEME FIX (IMPORTANT) */
+html {
+  background-color: white;
+  color: black;
+}
+
+/* DARK MODE */
+html.dark {
+  background-color: #0a0a0a;
+  color: white;
+}
+
+/* optional smooth transition */
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
 }

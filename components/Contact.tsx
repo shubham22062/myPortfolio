@@ -60,7 +60,7 @@ export default function Contact() {
           placeholder="Full Name"
           value={name}
           onChange={(e) => setName(e.target.value)}
-          className="border-2 border-gray-300 bg-gray-100 w-[200px] h-[70px] rounded-xl text-center outline-none"
+          className="border-2 border-gray-300 bg-gray-100 w-[200px] h-[70px] rounded-xl text-center outline-none text-black"
         />
 
         <input
@@ -68,7 +68,7 @@ export default function Contact() {
           placeholder="email address"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          className="border-2 border-gray-300 bg-gray-100 w-[300px] h-[70px] rounded-xl text-center outline-none"
+          className="border-2 border-gray-300 bg-gray-100 w-[300px] h-[70px] rounded-xl text-center outline-none text-black"
         />
 
       </div>
@@ -79,7 +79,7 @@ export default function Contact() {
           placeholder="Hi, Shubham are you up for this role..."
           value={message}
           onChange={(e) => setMessage(e.target.value)}
-          className="w-full h-[200px] border-2 border-gray-300 bg-gray-100 rounded-xl p-4 outline-none resize-none"
+          className="w-full h-[200px] border-2 border-gray-300 bg-gray-100 rounded-xl p-4 outline-none resize-none text-black"
         />
 
       </div>
@@ -88,7 +88,7 @@ export default function Contact() {
 
         <button
           onClick={handleSubmit}
-          className="border rounded-xl bg-black w-full h-[50px] transition-transform duration-300 hover:scale-105 hover:bg-gray-900 text-white"
+          className="border border-gray-800 rounded-xl bg-black w-full h-[50px] transition-transform duration-300 hover:scale-105 hover:bg-gray-900 text-white"
         >
           Send Message
         </button>
