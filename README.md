@@ -1,36 +1,69 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfolio Website
+
+A modern personal portfolio built with Next.js 16, React 19, and Tailwind CSS 4. This project showcases a responsive developer portfolio with animated sections, project highlights, skills, experience, contact form, and a polished landing page.
+
+## Features
+
+- Responsive UI with a clean, mobile-friendly layout
+- Hero section with introduction and social links
+- Project showcase and experience timeline
+- Skills categories and technology highlights
+- Contact form powered by a Next.js API route
+- Reusable React components for easy maintenance
+- Smooth scrolling and subtle animations using `framer-motion`
+
+## Tech Stack
+
+- `Next.js` 16
+- `React` 19
+- `TypeScript`
+- `Tailwind CSS` 4
+- `Framer Motion`
+- `react-scroll`
+- `react-icons`
+- `react-github-calendar`
+- `nodemailer` for contact handling
+
+## Project Structure
+
+- `app/` – Next.js application routes and layout
+- `components/` – Reusable UI components like `Hero`, `About`, `Projects`, `Contact`, `Skills`, and `Footer`
+- `public/` – Static assets and images
+- `app/api/contact/route.ts` – Contact form API route
+- `app/globals.css` – Global styles and Tailwind imports
 
 ## Getting Started
 
-First, run the development server:
+### Install dependencies
+
+```bash
+npm install
+```
+
+### Run locally
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser to view the portfolio.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Build for production
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+npm start
+```
 
-## Learn More
+## Customize
 
-To learn more about Next.js, take a look at the following resources:
+Update the portfolio content by editing the components inside `components/` and the layout in `app/layout.tsx`. Customize your contact settings inside `app/api/contact/route.ts`.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Notes
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Ensure your environment supports React 19 and Next.js 16.
+- Tailwind CSS is configured using `postcss.config.mjs`.
 
-## Deploy on Vercel
+## Author
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Created by Shubham. This repository is a personal portfolio website intended to present projects, experience, and contact details in a professional, modern layout.
