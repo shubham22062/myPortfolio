@@ -2,7 +2,6 @@
 
 import dynamic from "next/dynamic";
 
-
 const GitHubCalendar = dynamic(
     () => import("react-github-calendar").then((mod) => mod.GitHubCalendar),
     {
@@ -12,7 +11,6 @@ const GitHubCalendar = dynamic(
         ),
     }
 );
-
 
 const redTheme = {
     light: ["#ffebeb", "#ffb3b3", "#ff6666", "#ff1a1a", "#cc0000"],
@@ -27,21 +25,21 @@ export default function Card() {
             rel="noopener noreferrer"
             className="block"
         >
-            <div className="mt-10 w-full max-w-4xl mx-auto border border-gray-200 p-6 shadow-xl transition-all duration-300 hover:scale-[1.02] cursor-pointer">
+            <div className="mt-10 w-full max-w-4xl mx-auto border border-gray-200 p-4 sm:p-6 shadow-xl transition-all duration-300 hover:scale-[1.02] cursor-pointer">
 
                 {/* Top Section */}
                 <div className="flex items-start justify-between">
 
-                    <div className="flex items-center gap-4">
+                    <div className="flex items-center gap-3 sm:gap-4">
 
-                        <div className="p-3">
+                        <div className="p-2 sm:p-3">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 fill="none"
                                 viewBox="0 0 24 24"
                                 strokeWidth="1.5"
                                 stroke="currentColor"
-                                className="w-7 h-7"
+                                className="w-6 h-6 sm:w-7 sm:h-7"
                             >
                                 <path
                                     strokeLinecap="round"
@@ -52,10 +50,10 @@ export default function Card() {
                         </div>
 
                         <div>
-                            <h1 className="text-xl font-bold">
+                            <h1 className="text-lg sm:text-xl font-bold">
                                 GitHub Commits
                             </h1>
-                            <span className="block text-gray-400 text-sm mt-1">
+                            <span className="block text-gray-400 text-xs sm:text-sm mt-1">
                                 @ShubhamAwasthi
                             </span>
                         </div>
@@ -70,7 +68,7 @@ export default function Card() {
                             viewBox="0 0 24 24"
                             strokeWidth="1.5"
                             stroke="currentColor"
-                            className="w-5 h-5"
+                            className="w-4 h-4 sm:w-5 sm:h-5"
                         >
                             <path
                                 strokeLinecap="round"
@@ -83,12 +81,15 @@ export default function Card() {
                 </div>
 
                 {/* Contribution Graph */}
-                <div className="mt-8 overflow-hidden border border-white/10 bg-black/20 p-4">
-                    <div className="w-full flex justify-center">
+                <div className="mt-8 overflow-x-auto border border-white/10 bg-black/20 p-2 sm:p-4">
+                    <div className="w-full flex justify-center min-w-0">
                         <GitHubCalendar
                             username="shubham22062"
                             colorScheme="light"
                             theme={redTheme}
+                            blockSize={10}
+                            blockMargin={3}
+                            fontSize={10}
                         />
                     </div>
                 </div>

@@ -53,14 +53,14 @@ export default function Contact() {
         get back to you as soon as I can!
       </p>
 
-      <div className="flex justify-center gap-8 pt-10">
+      <div className="flex flex-col sm:flex-row justify-center gap-4 sm:gap-8 pt-10">
 
         <input
           type="text"
           placeholder="Full Name"
           value={name}
           onChange={(e) => setName(e.target.value)}
-          className="border-2 border-gray-300 bg-gray-100 w-[200px] h-[70px] rounded-xl text-center outline-none text-black"
+          className="border-2 border-gray-300 bg-gray-100 w-full sm:w-[200px] h-[70px] rounded-xl text-center outline-none text-black"
         />
 
         <input
@@ -68,7 +68,7 @@ export default function Contact() {
           placeholder="email address"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          className="border-2 border-gray-300 bg-gray-100 w-[300px] h-[70px] rounded-xl text-center outline-none text-black"
+          className="border-2 border-gray-300 bg-gray-100 w-full sm:w-[300px] h-[70px] rounded-xl text-center outline-none text-black"
         />
 
       </div>

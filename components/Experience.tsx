@@ -5,8 +5,8 @@ export default function Experience() {
                 Work Experience
             </h1>
 
-            <div className="py-6 flex justify-between items-start p-6 rounded-xl hover:shadow-lg transition-all duration-300">
- 
+            <div className="py-6 flex flex-col sm:flex-row sm:justify-between sm:items-start p-6 rounded-xl hover:shadow-lg transition-all duration-300">
+
                 {/* Left Side */}
                 <div className="max-w-2xl">
                     <h2 className="text-xl font-semibold">
@@ -23,7 +23,7 @@ export default function Experience() {
                 </div>
 
                 {/* Right Side */}
-                <div className="flex-shrink-0">
+                <div className="flex-shrink-0 sm:ml-4">
                     <span className="text-gray-400 text-sm font-medium">
                         Jan 2026 – Present
                     </span>
@@ -32,7 +32,7 @@ export default function Experience() {
             </div>
 
 
-             <div className="py-8 flex justify-between items-start p-6 rounded-xl hover:shadow-lg transition-all duration-300">
+            <div className="py-8 flex flex-col sm:flex-row sm:justify-between sm:items-start p-6 rounded-xl hover:shadow-lg transition-all duration-300">
 
                 {/* Left Side */}
                 <div className="max-w-2xl">
@@ -46,17 +46,14 @@ export default function Experience() {
                 </div>
 
                 {/* Right Side */}
-                <div className="flex-shrink-0">
+                <div className="flex-shrink-0 sm:ml-4">
                     <span className="text-gray-400 text-sm font-medium">
-                        Jun 2024 – Aug-2024
+                        Jun 2024 – Aug 2024
                     </span>
                 </div>
 
             </div>
 
-            
-
-            
         </div>
     );
 }

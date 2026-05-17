@@ -1,6 +1,8 @@
 @import "tailwindcss";
 
-/* animations */
+/* =========================
+   SCROLL ANIMATION
+========================= */
 @keyframes scroll {
   from {
     transform: translateX(0);
@@ -14,6 +16,9 @@
   animation: scroll 20s linear infinite;
 }
 
+/* =========================
+   FLOAT ANIMATION
+========================= */
 @keyframes float {
   0% {
     transform: translateY(0px);
@@ -30,24 +35,56 @@
   animation: float 3s ease-in-out infinite;
 }
 
-/* smooth scroll */
+/* =========================
+   SMOOTH SCROLL
+========================= */
 html {
   scroll-behavior: smooth;
 }
 
-/* ✅ GLOBAL THEME FIX (IMPORTANT) */
+/* =========================
+   THEME COLORS
+========================= */
 html {
   background-color: white;
   color: black;
 }
 
-/* DARK MODE */
 html.dark {
   background-color: #0a0a0a;
   color: white;
 }
 
-/* optional smooth transition */
+/* smoother theme transition */
 body {
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+/* =========================
+   🎬 CURTAIN THEME ANIMATION
+========================= */
+@keyframes curtainLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes curtainRight {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.animate-curtainLeft {
+  animation: curtainLeft 0.6s ease-in-out forwards;
+}
+
+.animate-curtainRight {
+  animation: curtainRight 0.6s ease-in-out forwards;
 }

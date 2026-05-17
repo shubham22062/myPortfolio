@@ -1,6 +1,6 @@
-export default function Skills(){
+export default function Skills() {
 
-     const skills = [
+    const skills = [
         "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
         "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
         "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
@@ -13,16 +13,20 @@ export default function Skills(){
         "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
     ];
 
-    return(
-        <div className="overflow-hidden mt-20 w-120 mx-auto bg-white">
-            <div className="flex animate-scroll gap-12 w-max">
-                    {[...skills, ...skills].map((logo,index)=>(
-                        <img key={index}
-                         src={logo}
-                         alt="skill"
-                         className="w-10 h-10 hover:scale-110 transition-transform duration-300"
-                        />
-                    ))}
+    return (
+        <div className="overflow-hidden mt-20 w-full max-w-[480px] sm:max-w-[600px] md:w-[480px] mx-auto bg-white px-4">
+            
+            <div className="flex animate-scroll gap-8 sm:gap-12 w-max">
+                
+                {[...skills, ...skills].map((logo, index) => (
+                    <img
+                        key={index}
+                        src={logo}
+                        alt="skill"
+                        className="w-8 h-8 sm:w-10 sm:h-10 hover:scale-110 transition-transform duration-300"
+                    />
+                ))}
+
             </div>
 
         </div>
