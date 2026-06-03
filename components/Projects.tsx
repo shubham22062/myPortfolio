@@ -9,7 +9,7 @@ export default function Projects() {
         <div className="pt-10">
           <div className="border border-gray-200 rounded-xl w-[90vw] sm:w-[360px] h-auto sm:h-[440px] p-5 flex flex-col">
             <a
-              href="https://dev.dg4uqajhampr9.amplifyapp.com/"
+              href="https://meshspire-landing.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
             >
