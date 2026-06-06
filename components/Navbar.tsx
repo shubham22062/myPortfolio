@@ -99,9 +99,9 @@ export default function Navbar() {
                 </span>
                 </a>
 
-                        <div className="border-r border-gray-100 pr-4 flex items-center">
+                <div className="border-r border-gray-100 pr-4 flex items-center">
                 <a
-                    href="https://drive.google.com/file/d/1sAP8MyrbRANs-Cwxi_VY3onyfLw5Y60C/view"
+                    href="/resume.pdf"
                     target="_blank"
                     className="relative group"
                 >
